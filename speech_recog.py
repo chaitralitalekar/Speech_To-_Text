@@ -15,7 +15,7 @@ with spr.Microphone() as source:
     print('speak now')
     audio = rec3.listen(source)
 
-if 'edureka' in rec2.recognize_google(audio):
+if 'google' in rec2.recognize_google(audio):
     rec2 = spr.Recognizer()
     url = 'https://www.google.com/'
     with spr.Microphone() as source:
